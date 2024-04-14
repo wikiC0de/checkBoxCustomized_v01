@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkbox مخـصص</title>
+    <style>
+        body{
+            width: 50%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            justify-content: center;
+        }
+        .checked_con {
+  cursor: pointer;
+}
+
+.checked_con input {
+  display: none;
+}
+
+.checked_con svg {
+  overflow: visible;
+}
+
+.path {
+  fill: none;
+  stroke: #555;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  -webkit-transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+  transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+  stroke-dasharray: 241 9999999;
+  stroke-dashoffset: 0;
+}
+
+.checked_con input:checked ~ svg .path {
+  stroke-dasharray: 70.5096664428711 9999999;
+  stroke-dashoffset: -262.2723388671875;
+}
+.lbl{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body style="background-color: #555;">
+<div class="lbl">
+    <label class="checked_con">
+        مكاقأة مالية
+        <input type="checkbox">
+        <svg viewBox="0 0 64 64" height="1em" width="2em">
+          <path d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16" pathLength="575.0541381835938" class="path"></path>
+        </svg>
+      </label>
+</div>
+    
+<div class="lbl">
+    <label class="checked_con">
+        كتاب شكر
+        <input type="checkbox" checked>
+        <svg viewBox="0 0 64 64" height="1em" width="2em">
+          <path d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16" pathLength="575.0541381835938" class="path"></path>
+        </svg>
+      </label>
+</div>
+<div class="lbl">
+    <label class="checked_con">
+        تراسل بريدي
+        <input type="checkbox">
+        <svg viewBox="0 0 64 64" height="1em" width="2em">
+          <path d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16" pathLength="575.0541381835938" class="path"></path>
+        </svg>
+      </label>
+</div>
+</body>
+</html>
